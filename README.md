@@ -1,4 +1,30 @@
 # Self-contained Ansible distribution
+## Tips
+Fork from [https://github.com/ownport/portable-ansible](https://github.com/ownport/portable-ansible), but modified the version and added some pip libs which could meet the requirement for deploying [Kubespray](https://github.com/kubernetes-sigs/kubespray) v2.13.0.   
+
+## Included in modified distribution
+ansible upgraded from v2.9.2 to v2.9.6, added jinja2, six, markupsafe, etc...
+
+```
+ansible==2.9.6
+PyYAML==5.2
+paramiko==2.7.1
+pyasn1==0.4.8
+asn1crypto==1.2.0
+bcrypt==3.1.7
+cffi==1.13.2
+PyNaCl==1.3.0
+jinja2==2.11.1
+six==1.13.0
+markupsafe==1.1.1
+cryptography==2.8
+netaddr==0.7.19
+pbr==5.4.4
+hvac==0.10.0
+jmespath==0.9.5
+ruamel.yaml==0.16.10
+```
+
 
 Ansible package with required python modules. No need to install, just download, unpack and use. The main idea of this package is to run Ansible playbooks on local machine
 

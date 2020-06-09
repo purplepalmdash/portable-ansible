@@ -9,3 +9,7 @@ portable-ansible*.tar.*
 
 # IDE
 .idea/
+# Build files
+builds/
+target/
+
